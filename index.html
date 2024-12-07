@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>OMISSIS</title>
-    <link rel="icon" type="image/x-icon" href="New Project (72).png">
+    <link rel="icon" type="image/x-icon" href="-OMISSIS.png">
     <style>
         body {
             background-color: black;
@@ -12,6 +12,10 @@
             padding: 0;
             text-align: center;
             cursor: url(images/cURSORE.png), auto;
+        }
+
+        #image-container {
+            margin-top: 20px;
         }
 
         #banner {
@@ -40,12 +44,22 @@
             display: inline-block;
             font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
         }
+
+        #countdown {
+            color: white;
+            font-size: 24px;
+            margin-top: 20px;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
     </style>
 </head>
 <body>
     <div id="image-container">
-        <img id="main-image" src="New Project (73).png" alt="Immagine iniziale">
+        <img id="main-image" src="Ciao!.png" alt="Immagine iniziale">
     </div>
+
+    <div id="countdown"></div>
+
     <audio id="background-music" autoplay loop muted>
         <source src="Musica.mp3" type="audio/mpeg">
         Il tuo browser non supporta l'audio.
@@ -58,7 +72,7 @@
         function startMusicAndChangeImage() {
             audio.muted = false; 
             audio.play().then(() => {
-                mainImage.src = "New Project (68).png"; 
+                mainImage.src = "Sono_qui.png"; 
                 mainImage.alt = "Immagine cambiata";
             }).catch((error) => {
                 console.error("Errore durante la riproduzione:", error);
@@ -66,9 +80,34 @@
         }
 
         document.body.addEventListener('click', startMusicAndChangeImage, { once: true });
+
+        const targetDate = new Date("2024-12-20T23:59:59").getTime();
+
+        function updateCountdown() {
+            const now = new Date().getTime();
+            const timeLeft = targetDate - now;
+
+            if (timeLeft > 0) {
+                const days = Math.floor(timeLeft / (1000 * 60 * 60 * 24));
+                const hours = Math.floor((timeLeft % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+                const minutes = Math.floor((timeLeft % (1000 * 60 * 60)) / (1000 * 60));
+                const seconds = Math.floor((timeLeft % (1000 * 60)) / 1000);
+
+                document.getElementById("countdown").innerHTML = 
+                    `${days}d ${hours}h ${minutes}m ${seconds}s`;
+            } else {
+                document.getElementById("countdown").innerHTML = "Sono arrivati!";
+                clearInterval(interval);
+            }
+        }
+
+        const interval = setInterval(updateCountdown, 1000);
+
+        updateCountdown();
     </script>
+
     <div id="banner">
-        <img src="waraccademy-min.png" alt="Logo Waraccademy">
+        <img src="LOGO.png" alt="Logo Waraccademy">
         <span>Waraccademy - 2024</span>
     </div>
 </body>
