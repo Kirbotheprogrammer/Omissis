@@ -98,9 +98,8 @@ h1 {
 }
 
 .End_poem {
-    /*margin-top: 40px;*/
-    /*margin-right: 550px;*/
-    /*margin-left: 550px;*/
+    margin-top: 40px;
+
     
 
 
@@ -171,7 +170,11 @@ h1 {
   margin: auto;
   width: 40rem;
 }
-
+@media (min-width: 1500px) {
+  .End{
+    font-size: 2rem;
+  }
+}
 @media (max-width: 710px) {
   #main-image{
     width: 25rem;
