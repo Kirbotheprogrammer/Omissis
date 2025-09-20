@@ -170,9 +170,15 @@ h1 {
   margin: auto;
   width: 40rem;
 }
-@media (min-width: 1500px) {
+@media (min-width: 1000px) {
   .End{
-    font-size: 2rem;
+    font-size: 1.3rem;
+  }
+  .End_poem{
+    margin:auto;
+    display: block;
+    margin-left: 10%;
+    margin-right: 10%;
   }
 }
 @media (max-width: 710px) {
