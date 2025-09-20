@@ -157,6 +157,7 @@ h1 {
 @media (max-width: 1300px) {
   .poster{
     width: 45rem;
+    height: 35rem;
   }
 }
 @media (max-width: 710px) {
@@ -164,7 +165,7 @@ h1 {
     width: 25rem;
   }
 }
-@media (max-width: 580px) {
+@media (max-width: 1000px) {
   .poster{
     height: 25rem;
     width: 30rem;
