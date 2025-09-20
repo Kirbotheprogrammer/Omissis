@@ -70,7 +70,7 @@ button {
   touch-action: manipulation;
 }
 
-button:focus {
+button:hover {
   background-color: #7c314e;
 }
 

@@ -17,15 +17,16 @@
         function Muta(){
             if (audio.muted == false) {
                 audio.muted = true;
-            }
             
+
             const button = document.querySelector('button');
             button.innerHTML = 'Audio Muted!';
-
-            if (button.innerHTML == "Audio Muted!") {
-                audio.muted = true;
-            }
-
+    }
+    else {
+        audio.muted = false;
+        const button = document.querySelector('button');
+        button.innerHTML = "Mute!";
+    }
         }
         function updateCountdown() {
             const now = new Date().getTime();
