@@ -153,6 +153,12 @@ h1 {
     margin-right: 10%;
   }
 }
+
+@media (max-width: 1300px) {
+  .poster{
+    width: 45rem;
+  }
+}
 @media (max-width: 710px) {
   #main-image{
     width: 25rem;
@@ -161,6 +167,7 @@ h1 {
 @media (max-width: 580px) {
   .poster{
     height: 30rem;
+    width: 30rem;
   }
 }
 
@@ -174,6 +181,7 @@ h1 {
     width: 15rem;
   }
   .poster{
+    width: 20rem;
     height: 20rem;
   }
 }
