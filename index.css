@@ -172,7 +172,7 @@ h1 {
     
   }
   p {
-    font-size: 10px;
+    font-size: 10rem;
   }
   .poster{
     height: 25rem;
@@ -186,7 +186,7 @@ h1 {
     width: 20rem;
   }
   p {
-    font-size: 10px;
+    font-size: 10rem;
   }
   .End{
     font-size: 1.2rem;
@@ -197,7 +197,7 @@ h1 {
     width: 15rem;
   }
   p {
-    font-size: 10px;
+    font-size: 10rem;
   }
   .poster{
     width: 20rem;
