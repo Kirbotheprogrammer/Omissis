@@ -169,6 +169,10 @@ h1 {
     video{
     height: 10rem;
     width: 30rem;
+    
+  }
+  p {
+    font-size: 10px;
   }
   .poster{
     height: 25rem;
