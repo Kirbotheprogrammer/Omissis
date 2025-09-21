@@ -196,6 +196,9 @@ h1 {
   #main-image{
     width: 15rem;
   }
+  p {
+    font-size: 10px;
+  }
   .poster{
     width: 20rem;
     height: 15rem;
