@@ -8,8 +8,8 @@ div.header{
 }
 
 video {
-  width: 25rem;
-  height: 25rem;
+  width: 45rem;
+  height: 30rem;
 }
 span {
     color: white;
@@ -166,6 +166,10 @@ h1 {
   }
 }
 @media (max-width: 1000px) {
+    video{
+    height: 10rem;
+    width: 30rem;
+  }
   .poster{
     height: 25rem;
     width: 30rem;
@@ -173,6 +177,10 @@ h1 {
 }
 
 @media (max-width: 550px) {
+  video{
+    height: 10rem;
+    width: 20rem;
+  }
   .End{
     font-size: 1.2rem;
   }
