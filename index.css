@@ -8,8 +8,8 @@ div.header{
 }
 
 video {
-  width: 20rem;
-  height: 10rem;
+  width: 40rem;
+  height: 25rem;
 }
 span {
     color: white;
@@ -128,7 +128,7 @@ h1 {
   text-align: center;
     display: grid;
     justify-content: center;
-    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(650px, 1fr));
     gap: 4rem; 
     max-width: 3600px;
     margin: 1rem auto;
