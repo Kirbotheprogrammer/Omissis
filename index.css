@@ -164,15 +164,17 @@ h1 {
   #main-image{
     width: 25rem;
   }
+    p {
+    font-size: 0.5rem;
+    }
 }
 @media (max-width: 1000px) {
     video{
     height: 10rem;
     width: 30rem;
-    
   }
   p {
-    font-size: 1rem;
+    font-size: 0.5rem;
   }
   .poster{
     height: 25rem;
@@ -186,7 +188,7 @@ h1 {
     width: 20rem;
   }
   p {
-    font-size: 1rem;
+    font-size: 0.5rem;
   }
   .End{
     font-size: 1.2rem;
@@ -197,7 +199,7 @@ h1 {
     width: 15rem;
   }
   p {
-    font-size: 1rem;
+    font-size: 0.5rem;
   }
   .poster{
     width: 20rem;
