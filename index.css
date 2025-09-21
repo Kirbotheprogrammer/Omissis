@@ -185,6 +185,9 @@ h1 {
     height: 10rem;
     width: 20rem;
   }
+  p {
+    font-size: 10px;
+  }
   .End{
     font-size: 1.2rem;
   }
