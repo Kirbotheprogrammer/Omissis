@@ -1,33 +1,8 @@
-        const audio = document.getElementById('background-music');
-        const mainImage = document.getElementById('main-image');
-
-        function startMusicAndChangeImage() {
-            audio.muted = false; 
-            audio.play().then(() => {
-                mainImage.src = "Skbidi.png"; 
-                mainImage.alt = "Immagine cambiata";
-            }).catch((error) => {
-                console.error("Errore durante la riproduzione:", error);
-            });
-        }
-
-        document.body.addEventListener('click', startMusicAndChangeImage, { once: true });
-
+    let video = document.getElementById("image-container");
+    video.onclick = function(){
+        video.innerHTML = '<iframe width="1840" height="1035" src="https://www.youtube.com/embed/MIQ-iFrRIpg?autoplay=1" title="An Erasmus movie 2   The Spainlands" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>'
+    }
         const targetDate = new Date("2025-09-24T23:59:59").getTime();
-        function Muta(){
-            if (audio.muted == false) {
-                audio.muted = true;
-            
-
-            const button = document.querySelector('button');
-            button.innerHTML = 'Audio Muted!';
-    }
-    else {
-        audio.muted = false;
-        const button = document.querySelector('button');
-        button.innerHTML = "Mute!";
-    }
-        }
         function updateCountdown() {
             const now = new Date().getTime();
             const timeLeft = targetDate - now;
