@@ -5,7 +5,7 @@ let trailer = document.getElementById("container")
 video.onclick = function(){
     if(document.getElementById("flag").getAttribute("href") == "#play"){
 
-        trailer.innerHTML = '<a onclick="event.preventDefault()" href="#" id="play" > <iframe src="https://www.youtube.com/embed/ozMUtZEEVSM" title="HO INSTALLATO IOS 26 SULL&#39;IPHONE 11 PRO DI 6 ANNI FA! 😳 L&#39;iPhone SUPPORTATO PIÙ VECCHIO! esplode?" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></a>';
+        trailer.innerHTML = '<a onclick="event.preventDefault()" href="#" id="play" > <iframe width="1840" height="1035" src="https://www.youtube.com/embed/MIQ-iFrRIpg?autoplay=1&vq=hd1080" title="An Erasmus movie 2   The Spainlands" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></a>';
         document.getElementById("flag").setAttribute("href", "#");
     } else {
         document.getElementById("flag").setAttribute("href", "#play");
